@@ -22,21 +22,13 @@ html {
 }
 
 body {
-	font-family: 'Nunito', sans-serif;
-
+	font-family: 'Syne', sans-serif;
 	@include fontSize(10);
 	max-width: 900px;
 	margin: 0 auto;	
 	width: 95%;
 
-	.resources {
-		@extend .flex;
-		justify-content: space-around; 
-		.instagram-media {
-			width: 50%;
-		}
 	}
-}
 a {
 	text-decoration: none;
 	color: black;
@@ -44,8 +36,39 @@ a {
 		text-decoration: underline;
 	}
 }
+header {
+	margin: 20px auto 50px;
+	img {
+		width: 18%;
+	}
 
+	direction: rtl;
+	.social {
+		font-size: 40px;
+	}
+	.aparat img {
+		width: 33px;
+	}
+	
+}
+.main {
+	img {
+		width: 100%;
+	}
+	h2,p {
+		text-align: center;
+	}
+}
+footer {
+	@extend .flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
 
-@media (max-width: 550px) {
+@media (max-width: 520px) {
+	header img {
+    width: 30%;
+}
 
 }

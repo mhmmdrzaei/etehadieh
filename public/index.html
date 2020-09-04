@@ -5,7 +5,13 @@
 	<link rel="stylesheet" href="styles/style.css"> 
 	<!-- <script src="scripts/main.js"></script> -->
 	<script src="https://kit.fontawesome.com/7ba0bbb744.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<link rel="manifest" href="assets/site.webmanifest">
+
+
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -16,52 +22,33 @@
 </head>
 <body>
 	<header>
+		<img src="assets/etehadiehspace.png" alt="Etehadieh Space Logo">
+		<div class="social">
+			<a href="mailto:etehadieh.space@gmail.com"><i class="far fa-paper-plane"></i></a>
+			<a href="https://www.instagram.com/etehadieh_space/" alt="Instagram Account"><i class="fab fa-instagram"></i></a>
+			<a href="#" alt="Youtube Account"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.aparat.com/Etehadieh.space" class="aparat" alt="apparat channel"><img src="assets/aparat.png"></a>	
+
+		</div>
 	</header>
+	<section class="main">
+		<img src="assets/1Moosavi.jpg">
+		<img src="assets/2masoumi.jpg">
+
+		<h2>
+			اطلاعات بیشتر به زودی / More information coming soon.
+		</h2>
+		<p>طرح: میلاد موسوی / Drawing: Milad Moosavi</p>
+		<p>خط: مینا معصومی / Calligraphy: Mina Masoumi</p>
+</p>
+	</section>
 
 	<footer id="contact">
+		<p>&copy; <script>new Date().getFullYear()>2010&&document.write(""+new Date().getFullYear());</script>, Etehadieh </p>
+		<a href="mailto:etehadieh.space@gmail.com">etehadieh(dot)space(at)gmail(dot)com</a>
 	</footer>
 	<script>
-		$(document).ready(function(){
-			$('.fuckyou').click(function(){
-					$('#nav-icon4').toggleClass('open');
-						$('.headerMenu').css('background', '');
-						$(".dropdown").toggle();
-						$('.borderWhite').toggle();
-						// $(".fa-bars").toggleClass('fa-borderss');
-						$(".headerMenu a").on("click", function(){
-						// console.log('fuckyou');
-						$(".headerMenu").hide();
 
-
-						$("hamburger").hover(function() {
-						    $(this).css("cursor", "pointer");
-						}, function() {
-						    $(this).css("", "");
-						});
-
-					});	
-
-				});
-			$(".headerMenu a").on("click", function(){
-				console.log('fuck');
-					$('#nav-icon4').toggleClass('open');
-				setTimeout(function() {
-					$(".fa-bars").removeClass('fa-borderss');
-					// $(".fa-bars").addClass('hamburger');
-
-					
-				});	
-				setTimeout(function(){
-					$(".skillsHead img").toggleClass('spin');
-					$(".aboutHead img").toggleClass('spin');
-					$(".portfolioHead img").toggleClass('spin');
-					$(".contactHead img").toggleClass('spin');
-
-
-				}, 1000);
-
-			});	
-		});	
 
 		$(document).scroll(function() {
 		  var y = $(this).scrollTop();
