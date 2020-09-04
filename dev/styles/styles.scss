@@ -1,0 +1,74 @@
+@import 'partials/setup';
+@import 'partials/hamburger';
+// $font-header: "Verdana", arial, sans-serif;
+
+
+
+$color-blue:#005ed4;
+
+
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Syne', sans-serif;
+	@include fontSize(10);
+	max-width: 900px;
+	margin: 0 auto;	
+	width: 95%;
+
+	}
+a {
+	text-decoration: none;
+	color: black;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+header {
+	margin: 20px auto 50px;
+	img {
+		width: 18%;
+	}
+
+	direction: rtl;
+	.social {
+		font-size: 40px;
+	}
+	.aparat img {
+		width: 33px;
+	}
+	
+}
+.main {
+	img {
+		width: 100%;
+	}
+	h2,p {
+		text-align: center;
+	}
+}
+footer {
+	@extend .flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 520px) {
+	header img {
+    width: 30%;
+}
+
+}
