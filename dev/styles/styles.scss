@@ -1,0 +1,51 @@
+@import 'partials/setup';
+@import 'partials/hamburger';
+// $font-header: "Verdana", arial, sans-serif;
+
+
+
+$color-blue:#005ed4;
+
+
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+
+	@include fontSize(10);
+	max-width: 900px;
+	margin: 0 auto;	
+	width: 95%;
+
+	.resources {
+		@extend .flex;
+		justify-content: space-around; 
+		.instagram-media {
+			width: 50%;
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: black;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+
+@media (max-width: 550px) {
+
+}

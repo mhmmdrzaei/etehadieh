@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css"> 
+	<!-- <script src="scripts/main.js"></script> -->
+	<script src="https://kit.fontawesome.com/7ba0bbb744.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<title>
+		Etehadieh | اتّحادیه
+	</title>
+</head>
+<body>
+	<header>
+	</header>
+
+	<footer id="contact">
+	</footer>
+	<script>
+		$(document).ready(function(){
+			$('.fuckyou').click(function(){
+					$('#nav-icon4').toggleClass('open');
+						$('.headerMenu').css('background', '');
+						$(".dropdown").toggle();
+						$('.borderWhite').toggle();
+						// $(".fa-bars").toggleClass('fa-borderss');
+						$(".headerMenu a").on("click", function(){
+						// console.log('fuckyou');
+						$(".headerMenu").hide();
+
+
+						$("hamburger").hover(function() {
+						    $(this).css("cursor", "pointer");
+						}, function() {
+						    $(this).css("", "");
+						});
+
+					});	
+
+				});
+			$(".headerMenu a").on("click", function(){
+				console.log('fuck');
+					$('#nav-icon4').toggleClass('open');
+				setTimeout(function() {
+					$(".fa-bars").removeClass('fa-borderss');
+					// $(".fa-bars").addClass('hamburger');
+
+					
+				});	
+				setTimeout(function(){
+					$(".skillsHead img").toggleClass('spin');
+					$(".aboutHead img").toggleClass('spin');
+					$(".portfolioHead img").toggleClass('spin');
+					$(".contactHead img").toggleClass('spin');
+
+
+				}, 1000);
+
+			});	
+		});	
+
+		$(document).scroll(function() {
+		  var y = $(this).scrollTop();
+		  if (y > 1200) {
+		    $('.outer').fadeIn();
+		  } else {
+		    $('.outer').fadeOut();
+		  }
+		});
+	</script>
+</body>
+</html>
